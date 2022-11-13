@@ -1,0 +1,7 @@
+Before running poorni, we have to set up the server and run actions in the terminal using the following commands:
+1)rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml
+2)rasa run actions
+
+
+***note-1: make sure that the "action_endpoint:" under the file "endpoints.yml" has the url: "http://localhost:5055/webhook"
+***note-2: make sure in the file named credentials.yml, the rasa: url: "http://localhost:5002/api" is present.

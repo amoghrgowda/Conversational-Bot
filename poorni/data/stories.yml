@@ -1,0 +1,17 @@
+version: "3.1"
+
+stories:
+
+- story: direction 1
+  steps:
+    - intent: greet
+    - action: utter_simple_greet
+    - intent: location_principal
+    - action: utter_principal
+
+- story: direction 2
+  steps:
+    - intent: greet
+    - action: utter_simple_greet
+    - intent: location_cs_hod
+    - action: utter_cs_hod
